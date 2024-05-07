@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.product-board {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-board-heading {
+    text-align: center;
+}
+
+.product-wrapper {
+    display: flex;
+    width: max-content;
+    animation: slide-infinite 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes slide-infinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.product {
+    width: 200px; /* Adjust the width of each image */
+    height: auto;
+    margin-right: 10px; /* Adjust the spacing between images */
+}
+
+
+    </style>
+    <div class="product-board">
+        <h2 class="product-board-heading">Examples of product</h2>
+        <div class="product-wrapper">
+            <img class="product" src="./assets/product-images/Superstar_Shoes_White_EG4958_01_standard.jpg" />
+            <img class="product" src="./assets/product-images/Originals_Roller_3.0_3-Pack_Crew_Socks_White_IR1075_03_standard.jpg" />
+            <img class="product" src="./assets/product-images/Mexico_24_Away_Jersey_Green_IP6384_21_model.jpg" />
+            <img class="product" src="./assets/product-images/LA_Graphic_Hoodie_Black_IN6388_21_model.jpg" />
+            <img class="product" src="./assets/product-images/Defender_Backpack_Grey_EX7007_01_standard.jpg" />
+            <img class="product" src="./assets/product-images/Superlite_Hat_Black_EX7048_01_standard.jpg" />
+        </div>
+    </div>
+    
+    
+</body>
+</html>
